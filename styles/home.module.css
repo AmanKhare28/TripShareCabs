@@ -115,20 +115,18 @@
   height: 100px;
   width: 198px;
   background-size: cover;
-  margin-left: 48px;
 }
 .gracepic {
   background-image: url("/grace.png");
   height: 100px;
   width: 198px;
   background-size: cover;
-  margin-left: 48px;
 }
 .swiftpic {
   background-image: url("/swift.png");
   height: 110px;
   width: 148px;
-  margin-left: 100px;
+  margin-left: 50px;
   background-size: cover;
 }
 .optprice {
