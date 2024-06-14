@@ -1,0 +1,86 @@
+#app {
+  margin: 0;
+  padding: 0;
+  /* Optionally hide horizontal overflow */
+}
+.container {
+  margin-top: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh; /* Set height to cover the entire viewport height */
+  width: 95vw; /* Set width to cover the entire viewport width */
+  background-color: #ea7c37;
+  background-image: url("/login.png");
+  overflow: hidden;
+}
+
+.signin {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 60%;
+  margin-right: 200px;
+}
+
+.signin h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.signin input {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 15.5px;
+  border: none;
+  background-color: #ecf1f7;
+  margin-top: 20px;
+  outline: none;
+  font-weight: 500;
+}
+
+.signin input ::placeholder {
+  color: #b2bbc6;
+}
+
+.signin button {
+  margin-top: 70px;
+  width: 50%;
+  margin-left: 25%;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 25px;
+  background-color: #ea7c37;
+  color: white;
+  cursor: pointer;
+
+  width: 50%;
+  border: none;
+  background-color: #d1495b;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  border-radius: 10px;
+  margin-left: 25%;
+  cursor: pointer;
+}
+
+.signin p {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.signin span {
+  color: #ea7c37;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signin span:hover {
+  text-decoration: underline;
+}

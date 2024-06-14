@@ -1,0 +1,157 @@
+.main {
+  height: 92vh;
+  display: flex;
+  padding: 30px;
+  color: #353535;
+}
+.ride {
+  width: 40%;
+}
+.nav {
+  display: flex;
+  width: 100%;
+}
+.logo {
+  background-image: url("/logo.svg");
+  width: 30%;
+  height: 40px;
+  background-size: cover;
+}
+.profile {
+  background-image: url("/profile.svg");
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-size: cover;
+}
+.right {
+  display: flex;
+  margin-left: 50%;
+  width: 30%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.premium {
+  background-color: #edae49;
+  padding: 7px 12px;
+  font-weight: 600;
+  color: #6b4e1e;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.trip {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #969494;
+  width: 90%;
+  padding: 5px;
+  background-color: white;
+  border-radius: 20px;
+}
+.triphead {
+  margin-left: 20px;
+  font-size: 30px;
+}
+.input {
+  width: 91%;
+  padding: 30px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  padding-left: 29px;
+}
+.input::placeholder {
+  font-size: 1.2rem;
+  color: #c5c5c5;
+}
+.pick {
+  border-radius: 20px 20px 0px 0px;
+  border-bottom: 3px solid #969494;
+}
+.drop {
+  border-radius: 0px 0px 20px 20px;
+}
+.share {
+  display: flex;
+  margin-left: 20px;
+}
+.check {
+  width: 20px;
+  cursor: pointer;
+}
+.search {
+  width: 40%;
+  border: none;
+  background-color: #d1495b;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  border-radius: 10px;
+  margin-left: 25%;
+  cursor: pointer;
+}
+.options {
+  display: none;
+  width: 90%;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+.cat {
+  background-color: #edae49;
+  padding: 12px;
+  border-radius: 10px;
+  width: 28%;
+  cursor: pointer;
+}
+.opthead {
+  font-size: 1.2rem;
+}
+.optpic {
+  margin-top: 10px;
+}
+.grandepic {
+  background-image: url("/max.png");
+  height: 100px;
+  width: 198px;
+  background-size: cover;
+  margin-left: 48px;
+}
+.gracepic {
+  background-image: url("/grace.png");
+  height: 100px;
+  width: 198px;
+  background-size: cover;
+  margin-left: 48px;
+}
+.swiftpic {
+  background-image: url("/swift.png");
+  height: 110px;
+  width: 148px;
+  margin-left: 100px;
+  background-size: cover;
+}
+.optprice {
+  color: #d1495b;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+.selected {
+  border: 2px solid black;
+}
+.confirm {
+  width: 40%;
+  border: none;
+  background-color: #d1495b;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  border-radius: 10px;
+  margin-left: 25%;
+  cursor: pointer;
+  margin-top: 30px;
+  display: none;
+}

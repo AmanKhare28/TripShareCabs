@@ -1,0 +1,98 @@
+.contain {
+  display: flex;
+  justify-content: center;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+}
+.prize {
+  margin-bottom: 10px;
+  margin-top: -20px;
+  text-align: center;
+  color: #5d7086;
+  font-size: 37px;
+}
+.types {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mode {
+  padding: 7px;
+  border-radius: 7px;
+  color: #5d7086;
+  cursor: pointer;
+}
+.mode:hover {
+  text-decoration: underline;
+}
+.selectedMode {
+  background-color: #bcc7d4;
+  color: #5d7086;
+}
+.head {
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 20px;
+  color: #5d7086;
+}
+.input {
+  padding: 20px;
+  border-radius: 6px;
+  font-size: 15.5px;
+  border: 3px solid #b2bbc6;
+  background-color: #ecf1f7;
+  margin-top: 0px;
+  outline: none;
+}
+.input::placeholder {
+  color: #b2bbc6;
+}
+.input:focus {
+  border: 3px solid #5d7086;
+}
+.payment {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  background-color: #ecf1f7;
+  padding: 50px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.details2 {
+  display: flex;
+  justify-content: space-between;
+}
+.number {
+  width: 195px;
+}
+.cvv {
+  width: 45px;
+}
+.proceed {
+  padding: 20px;
+  font-size: 20px;
+  background-color: #5d7086;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  width: 200px;
+  cursor: pointer;
+}
+.ending {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.topay {
+  color: #5d7086;
+}
+.amount {
+  font-size: 40px;
+  font-weight: 600;
+}
