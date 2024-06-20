@@ -1,0 +1,177 @@
+.main {
+  background-color: #c55061;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 100px 200px;
+}
+.detail {
+  background-color: #df6779;
+  width: 100%;
+  height: 25%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0px 30px;
+}
+.bottom {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  background-color: #df6779;
+  width: 65%;
+  height: 100%;
+  border-radius: 30px;
+}
+.right {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.subscription {
+  width: 100%;
+  height: 75%;
+  background-color: #df6779;
+  border-radius: 30px;
+}
+.socials {
+  width: 100%;
+  height: 20%;
+  background-color: #df6779;
+  border-radius: 30px;
+}
+.dp {
+  background-image: url("/profile.svg");
+  height: 70%;
+  width: 9%;
+  background-size: cover;
+  margin-right: 30px;
+}
+.info {
+  width: 80%;
+}
+.name {
+  font-size: 3rem;
+  font-weight: 100;
+  color: white;
+}
+.email {
+  color: #ffaeba;
+  font-size: 1.3rem;
+}
+.logout {
+  background-color: #e5ae56;
+  height: 55px;
+  border: none;
+  width: 5%;
+  border-radius: 30px;
+  color: #c55061;
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 0px 10px;
+  min-width: 170px;
+}
+.head {
+  color: #ffaeba;
+  font-size: 1.7rem;
+  margin: 20px;
+  font-weight: 600;
+}
+.plan {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  color: white;
+}
+.buy {
+  background-color: #e5ae56;
+  height: 55px;
+  border: none;
+  border-radius: 30px;
+  color: #c55061;
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 0px 10px;
+  min-width: 170px;
+  margin-left: 34%;
+}
+.socials {
+  display: flex;
+  align-items: center;
+}
+.linkedin {
+  background-image: url("/linkedin.svg");
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  margin-left: 40px;
+}
+.twitter {
+  background-image: url("/X.png");
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  margin-left: 30px;
+}
+.top {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  align-items: baseline;
+}
+.more {
+  color: #ffaeba;
+  cursor: pointer;
+}
+.more:hover {
+  text-decoration: underline;
+}
+.rides {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ride {
+  height: 40%;
+  width: 90%;
+  background-color: #ffaeba;
+  border-radius: 30px;
+  padding: 20px;
+  color: #c55061;
+}
+.date {
+  height: 20%;
+}
+.down {
+  display: flex;
+  align-items: center;
+  height: 80%;
+}
+.location {
+  width: 70%;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.price {
+  font-size: 3rem;
+}
+.no {
+  color: #ffaeba;
+  font-size: 3rem;
+}

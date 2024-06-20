@@ -1,0 +1,71 @@
+/* Custom scrollbar for the .main class */
+.main {
+  background-color: #c55061;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Changed from center to flex-start */
+  overflow: auto; /* Ensures scrollbars only appear when needed */
+}
+
+/* Custom scrollbar styles */
+.main::-webkit-scrollbar {
+  width: 30px; /* Width of the scrollbar */
+}
+
+.main::-webkit-scrollbar-track {
+  background: #c55061;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background-color: #ffaeba; /* Color of the scrollbar thumb */
+  border-radius: 30px; /* Roundness of the thumb */
+  border: 10px solid #c55061;
+}
+
+.contain {
+  background-color: #df6779;
+  width: 80%;
+  border-radius: 30px;
+  padding: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 60px; /* Added to create space at the top */
+}
+
+.ride {
+  height: 200px;
+  width: 90%;
+  background-color: #ffaeba;
+  border-radius: 30px;
+  padding: 20px;
+  color: #c55061;
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+
+.date {
+  height: 20%;
+}
+
+.down {
+  display: flex;
+  align-items: center;
+  height: 80%;
+}
+
+.location {
+  width: 70%;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 3rem;
+}
+
+.no {
+  color: #ffaeba;
+  font-size: 3rem;
+}

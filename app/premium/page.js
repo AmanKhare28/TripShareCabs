@@ -1,82 +1,37 @@
-"use client"; // Mark this file as a client component
+"use client";
 
-import { useRouter } from "next/navigation"; // Correct import for useRouter in Next.js 13
+import styles from "../../styles/premium.module.css";
+import { useSearchParams } from "next/navigation";
+import { db } from "../firebase/firebase";
+import { doc, updateDoc } from "firebase/firestore";
 
 export default function Premium() {
-  const router = useRouter();
+  const params = useSearchParams();
+  const uid = params.get("uid");
+
+  function handleBuy() {
+    const docRef = doc(db, "users", uid);
+    updateDoc(docRef, {
+      subscription: "Premium",
+    });
+  }
 
   return (
-    <div
-      style={{
-        height: "80vh",
-        width: "50vw",
-        border: "5px solid #5d7086",
-        marginLeft: "25%",
-        marginTop: "5%",
-      }}
-    >
-      <h1
-        style={{
-          fontSize: "40px",
-          textAlign: "center",
-          color: "#5d7086",
-        }}
-      >
-        Premium
-      </h1>
-      <h1
-        style={{
-          fontSize: "100px",
-          textAlign: "center",
-          color: "#5d7086",
-          marginTop: "-30px",
-        }}
-      >
-        ₹99.00
-      </h1>
-      <h1
-        style={{
-          fontSize: "30px",
-          color: "#5d7086",
-          marginTop: "30px",
-          marginLeft: "20px",
-        }}
-      >
-        Features:
-      </h1>
-      <ul
-        style={{
-          listStyleType: "circle",
-          fontSize: "30px",
-          marginLeft: "60px",
-          color: "#5d7086",
-        }}
-      >
-        <li style={{ marginTop: "25px" }}>Priority Booking</li>
-        <li style={{ marginTop: "25px" }}>Exclusive Discounts</li>
-        <li style={{ marginTop: "25px" }}>Flexible Cancellation</li>
-        <li style={{ marginTop: "25px" }}>Dedicated Support</li>
-      </ul>
-      <button
-        style={{
-          width: "50%",
-          marginLeft: "25%",
-          padding: "20px",
-          fontSize: "20px",
-          border: "none",
-          backgroundColor: "#5d7086",
-          color: "white",
-          fontWeight: "600",
-          marginTop: "40px",
-          cursor: "pointer",
-        }}
-        onClick={() => {
-          console.log("Button clicked");
-          router.push(`/paymentModes?prize=${99}`);
-        }}
-      >
-        Buy Now
-      </button>
+    <div className={styles.c}>
+      <div className={styles.card}>
+        <h1 className={styles.phead}>Premium</h1>
+        <h1 className={styles.cost}>₹99.00</h1>
+        <h1 className={styles.fhead}>Features:</h1>
+        <ul className={styles.list}>
+          <li className={styles.item}>Priority Booking</li>
+          <li className={styles.item}>Exclusive Discounts</li>
+          <li className={styles.item}>Flexible Cancellation</li>
+          <li className={styles.item}>Dedicated Support</li>
+        </ul>
+        <button className={styles.buy} onClick={handleBuy}>
+          Buy Now
+        </button>
+      </div>
     </div>
   );
 }

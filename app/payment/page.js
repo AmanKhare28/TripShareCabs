@@ -1,18 +1,20 @@
 "use client";
-import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import styles from "../../styles/payment.module.css";
+import { useEffect, useState } from "react";
+import { doc, updateDoc, arrayUnion } from "firebase/firestore";
+import { db } from "../firebase/firebase";
 
-export default function Payment() {
-  const router = useRouter();
-  const [prize, setPrize] = useState("");
+function Payment() {
+  const searchParams = useSearchParams();
+  const prize = searchParams.get("price");
+  const pickup = searchParams.get("pickup");
+  const uid = searchParams.get("uid");
+  const dropoff = searchParams.get("dropoff");
   const [mode, setMode] = useState("");
+  const router = useRouter();
 
-  useEffect(() => {
-    const queryParams = new URLSearchParams(window.location.search);
-    const prize = queryParams.get("prize");
-    setPrize(prize);
-  }, []);
+  const docRef = doc(db, "users", uid);
 
   function selectMode(event) {
     const divs = document.querySelectorAll(`.${styles.mode}`);
@@ -25,6 +27,14 @@ export default function Payment() {
   }
 
   function handleProceed() {
+    updateDoc(docRef, {
+      rides: arrayUnion({
+        destination: dropoff,
+        price: prize,
+        source: pickup,
+        time: new Date(),
+      }),
+    });
     router.push("/");
   }
 
@@ -144,6 +154,7 @@ export default function Payment() {
             <div className={styles.topay}>
               <div className={styles.amounttext}>Amount: </div>
               <div className={styles.amount}>₹{prize}.00</div>
+              <div style={{ fontSize: "1.5rem" }}>{pickup + "-" + dropoff}</div>
             </div>
             <button className={styles.proceed} onClick={handleProceed}>
               Pay Now
@@ -154,3 +165,5 @@ export default function Payment() {
     </div>
   );
 }
+
+export default Payment;

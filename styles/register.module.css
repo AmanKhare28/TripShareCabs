@@ -1,0 +1,118 @@
+.form {
+  height: 81.7%;
+  padding: 30px;
+}
+.phead {
+  font-weight: 900;
+  font-size: 15px;
+  color: #ffaeba;
+}
+.mhead {
+  font-weight: 100;
+  font-size: 4.5rem;
+  color: white;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.name {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.first {
+  width: 100%;
+}
+.last {
+  width: 100%;
+}
+.para {
+  position: absolute;
+  color: #ffaeba;
+  font-size: 13px;
+  margin-left: 30px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.half {
+  border: none;
+  outline: none;
+  background-color: #df6779;
+  width: 95%;
+  padding-top: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-bottom: 5px;
+}
+.emailcont {
+  width: 100%;
+  margin-top: 10px;
+}
+.full {
+  border: none;
+  outline: none;
+  background-color: #df6779;
+  width: 97.5%;
+  padding-top: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-bottom: 5px;
+}
+.passcont {
+  margin-top: 10px;
+}
+.password {
+  border: none;
+  outline: none;
+  background-color: #df6779;
+  width: 70%;
+  padding-top: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  border-radius: 30px 0px 0px 30px;
+  padding-left: 30px;
+  padding-bottom: 5px;
+}
+.pass {
+  display: flex;
+  align-items: center;
+}
+.show {
+  background-color: #ffaeba;
+  height: 55px;
+  border: none;
+  width: 27.5%;
+  border-radius: 0px 30px 30px 0px;
+  color: #c55061;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.but {
+  background-color: #e5ae56;
+  height: 55px;
+  border: none;
+  width: 35%;
+  border-radius: 30px;
+  color: #c55061;
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 0px 10px;
+  min-width: 170px;
+}
+@media (max-width: 1500px) {
+  .mhead {
+    font-size: 3rem;
+  }
+  .form {
+    padding: 10px;
+  }
+}

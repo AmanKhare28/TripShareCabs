@@ -71,7 +71,8 @@
   width: 195px;
 }
 .cvv {
-  width: 45px;
+  width: 92px;
+  padding-right: 10px;
 }
 .proceed {
   padding: 20px;

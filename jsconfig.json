@@ -1,9 +1,7 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
-      "@app/*": ["app/*"]
+      "@/*": ["./*"]
     }
-  },
-  "include": ["app/**/*.js", "app/**/*.jsx", "app/**/*.ts", "app/**/*.tsx"]
+  }
 }
