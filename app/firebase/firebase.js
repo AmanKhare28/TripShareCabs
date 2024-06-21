@@ -1,7 +1,8 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getAnalytics, isSupported } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+
 const firebaseConfig = {
   apiKey: "AIzaSyDYkAmg34fMWmW4XBxOD0TZEj1rKDIaM48",
   authDomain: "tripshare-87d6d.firebaseapp.com",
@@ -13,6 +14,14 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
+const initializeAnalytics = async () => {
+  if (typeof window !== "undefined" && (await isSupported())) {
+    const analytics = getAnalytics(app);
+  }
+};
+
+initializeAnalytics();
+
 export const Auth = getAuth(app);
 export const db = getFirestore(app);
