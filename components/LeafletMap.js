@@ -58,6 +58,10 @@ function ClickHandler({ onClick }) {
 }
 
 const LeafletMap = ({ pickUpCoords, onMapClick, dropOffCoords }) => {
+  useEffect(() => {
+    // Any client-side specific logic can go here
+  }, []);
+
   return (
     <MapContainer
       center={[28.6139, 77.2088]}

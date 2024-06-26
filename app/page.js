@@ -5,9 +5,13 @@ import { onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { Auth, db } from "./firebase/firebase";
-import LeafletMap from "@/components/LeafletMap";
 import { geocode, reverseGeocode } from "../utils/geoapify";
 import LocationInput from "../components/LocationInput";
+import dynamic from "next/dynamic";
+
+const LeafletMap = dynamic(() => import("@/components/LeafletMap"), {
+  ssr: false,
+});
 
 export default function Home() {
   const router = useRouter();
