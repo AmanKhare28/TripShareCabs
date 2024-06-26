@@ -49,7 +49,7 @@ function LocationMarker({ position, icon }) {
   );
 }
 
-function ClickHandler({ onClick, coords }) {
+function ClickHandler({ onClick }) {
   useMapEvents({
     click(e) {
       onClick(e.latlng);
@@ -58,15 +58,11 @@ function ClickHandler({ onClick, coords }) {
 }
 
 const LeafletMap = ({ pickUpCoords, onMapClick, dropOffCoords }) => {
-  useEffect(() => {
-    // Any additional Leaflet setup can be done here
-  }, []);
-
   return (
     <MapContainer
       center={[28.6139, 77.2088]}
       zoom={13}
-      style={{ height: "100%", width: "100%" }}
+      style={{ height: "90vh", width: "100%" }}
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
