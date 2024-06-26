@@ -32,6 +32,8 @@
   margin-top: 40px;
   margin-bottom: 40px;
   padding-top: 60px; /* Added to create space at the top */
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .ride {
@@ -57,7 +59,7 @@
 
 .location {
   width: 70%;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 

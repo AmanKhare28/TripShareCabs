@@ -55,10 +55,10 @@ export default function MorePage() {
             <div className={styles.down}>
               <div className={styles.location}>
                 {ride.source.toUpperCase() +
-                  " - " +
+                  "    -    " +
                   ride.destination.toUpperCase()}
               </div>
-              <div className={styles.price}>{"₹" + ride.price + ".00"}</div>
+              <div className={styles.price}>{"₹" + ride.price}</div>
             </div>
           </div>
         ))}

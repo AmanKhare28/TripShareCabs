@@ -153,8 +153,8 @@ function PaymentPage() {
           <div className={styles.ending}>
             <div className={styles.topay}>
               <div className={styles.amounttext}>Amount: </div>
-              <div className={styles.amount}>₹{prize}.00</div>
-              <div style={{ fontSize: "1.5rem" }}>{pickup + "-" + dropoff}</div>
+              <div className={styles.amount}>₹{prize}</div>
+              <div style={{ fontSize: "1rem" }}>{pickup + "-" + dropoff}</div>
             </div>
             <button className={styles.proceed} onClick={handleProceed}>
               Pay Now

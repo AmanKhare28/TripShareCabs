@@ -13,7 +13,6 @@
 .map {
   height: 95%;
   width: 65%;
-  background-image: url("/map.png");
   border-radius: 50px;
   margin-top: 20px;
 }
@@ -67,20 +66,6 @@
   padding: 10px;
   margin-top: 2%;
   margin-bottom: 2%;
-}
-.input {
-  padding: 20px;
-  border: none;
-  background-color: #fff8ed;
-  outline: none;
-  font-size: 1.2rem;
-}
-.pick {
-  border-bottom: 2px dashed #404040;
-  border-radius: 20px 20px 0px 0px;
-}
-.drop {
-  border-radius: 0px 0px 20px 20px;
 }
 .share {
   display: flex;
@@ -198,4 +183,30 @@
   padding: 0px 30px;
   background-color: rgba(255, 0, 0, 0.034);
   color: red;
+}
+.suggestions {
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  width: 30%;
+  z-index: 1000;
+  background: #f0f0f0;
+  color: #404040;
+}
+.input {
+  background-color: #fff8ed;
+  border: none;
+  font-size: 1.3rem;
+  outline: none;
+  width: 100%;
+}
+.suggestion {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion:hover {
+  background-color: #fff8ed;
 }
