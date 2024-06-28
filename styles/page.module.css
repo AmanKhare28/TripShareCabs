@@ -210,3 +210,16 @@
 .suggestion:hover {
   background-color: #fff8ed;
 }
+
+@media (max-width: 1108px) {
+  .main {
+    height: 95vh;
+    width: 100vw;
+    flex-direction: column;
+    overflow: auto;
+    justify-content: space-around;
+  }
+  .ride {
+    width: 80%;
+  }
+}

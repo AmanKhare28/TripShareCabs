@@ -57,17 +57,13 @@ function ClickHandler({ onClick }) {
   });
 }
 
-const LeafletMap = ({ pickUpCoords, onMapClick, dropOffCoords }) => {
+const LeafletMap = ({ pickUpCoords, onMapClick, dropOffCoords, style }) => {
   useEffect(() => {
     // Any client-side specific logic can go here
   }, []);
 
   return (
-    <MapContainer
-      center={[28.6139, 77.2088]}
-      zoom={13}
-      style={{ height: "90vh", width: "100%" }}
-    >
+    <MapContainer center={[28.6139, 77.2088]} zoom={13} style={style}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

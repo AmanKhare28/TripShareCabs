@@ -26,6 +26,11 @@ export default function Home() {
   const [dropOffCoords, setDropOffCoords] = useState(null);
   const [dist, setDist] = useState(0);
 
+  const mapStyle = {
+    height: "90vh",
+    width: "100%",
+  };
+
   const pickUpStyle = {
     padding: "20px",
     border: "none",
@@ -289,6 +294,8 @@ export default function Home() {
           pickUpCoords={pickUpCoords}
           dropOffCoords={dropOffCoords}
           onMapClick={handleMapClick}
+          style={mapStyle}
+          className={styles.leaflet}
         />
       </div>
     </div>

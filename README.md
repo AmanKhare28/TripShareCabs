@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Alt text](/public/light_logo.png)
 
-## Getting Started
+TripShare is a cab booking web application built with Next.js that allows users to book rides by selecting pickup and drop-off locations using autocomplete or a map. It offers Firebase authentication, pricing calculations for different vehicle options, payment processing, and a user profile section that stores travel history and membership status.
 
-First, run the development server:
+## Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Check out the live project [here](https://trip-share-cabs.vercel.app/).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **User Authentication:** Sign up and log in using Firebase Auth.
+- **Location Selection:** Choose pickup and drop-off locations using autocomplete or directly from a map powered by Leaflet, OpenStreetMap, and Geoapify.
+- **Price Calculation:** Algorithm calculates the fare and provides three vehicle options to choose from.
+- **Payment Processing:** Redirect to a payment form after selecting a vehicle.
+- **User Profile:** Store and view user details like name, email, travel history, and membership status using Firestore.
+- **Premium Membership:** Option to buy a premium membership directly from the app.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tech Stack
 
-## Learn More
+- **Frontend:** Next.js, React
+- **Authentication:** Firebase Auth
+- **Database:** Firestore by Firebase
+- **Maps:** Leaflet, OpenStreetMap, Geoapify
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Sign Up / Log In:** Create an account or log in using your Firebase Auth credentials.
+2. **Select Locations:** Use the autocomplete feature or the map to choose your pickup and drop-off locations.
+3. **Choose Vehicle:** Review the fare options and select your preferred vehicle.
+4. **Make Payment:** Fill in the payment form to complete your booking.
+5. **View Profile:** Check your profile for details like travel history and membership status.
+6. **Buy Membership:** Purchase a premium membership if desired.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For any questions or inquiries, please contact [Aman Khare](mailto:aman22feb2004@gmail.com).
