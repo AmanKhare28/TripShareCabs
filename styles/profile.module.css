@@ -161,11 +161,12 @@
 .down {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 80%;
 }
 .location {
-  width: 70%;
-  font-size: 3rem;
+  width: 60%;
+  font-size: 2rem;
   font-weight: 600;
 }
 .price {
